@@ -23,10 +23,11 @@ return new class extends Migration
             $table->float('price');
             $table->smallInteger('lesson_num')->nullable();
             $table->smallInteger('video_length')->nullable();
+            $table->smallInteger('downloadable_res')->nullable();
             $table->smallInteger('folow')->nullable();
             $table->float('score')->nullable();
-
             $table->timestamps();
+            
         });
     }
 
